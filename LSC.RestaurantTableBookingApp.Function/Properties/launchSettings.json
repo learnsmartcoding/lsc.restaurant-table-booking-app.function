@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "LSC.RestaurantTableBookingApp.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7011",
+      "launchBrowser": false
+    }
+  }
+}
