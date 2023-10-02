@@ -66,11 +66,11 @@ namespace LSC.CustomAttributeFunction
                 return (ActionResult)new BadRequestObjectResult(new ResponseContent("ValidationError", "Please provide a Display Name with at least five characters."));
             }
 
-            var role = "User";
-            if (data.email.ToString().ToLower() == "learnsmartcoding@gmail.com")
-                role = "Admin";
-            else if (data.email.ToString().ToLower() == "karthiktechblog.com@gmail.com")
-                role ="Employee";
+            var role = "Admin";//"User";
+            //if (data.email.ToString().ToLower() == "learnsmartcoding@gmail.com")
+            //    role = "Admin";
+            //else if (data.email.ToString().ToLower() == "karthiktechblog.com@gmail.com")
+            //    role ="Employee";
 
             // Input validation passed successfully, return `Allow` response.
             // TO DO: Configure the claims you want to return
@@ -78,7 +78,7 @@ namespace LSC.CustomAttributeFunction
             {
                 jobTitle = "This value return by the API Connector",//,
                 // You can also return custom claims using extension properties.
-                extension_EmployeeName = "KarthikKannan",
+                extension_EmployeeName = data.displayName,
                 extension_EmployeeRole= role
             });
         }
