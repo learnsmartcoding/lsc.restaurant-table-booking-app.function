@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Linq;
 
-namespace LSC.CustomAttributeFunction
+namespace LSC.RestaurantTableBookingApp.Function
 {
     public static class SignUpValidation
     {
@@ -71,6 +71,17 @@ namespace LSC.CustomAttributeFunction
                 role = "SuperAdmin";
             //else if (data.email.ToString().ToLower() == "karthiktechblog.com@gmail.com")
             //    role = "Admin";
+
+            var toLog = new
+            {
+                jobTitle = "This value return by the API Connector",//,
+                // You can also return custom claims using extension properties.
+                extension_EmployeeName = data.displayName,
+                extension_EmployeeRole = role
+            };
+
+            log.LogInformation(JsonConvert.SerializeObject(toLog));
+
 
             // Input validation passed successfully, return `Allow` response.
             // TO DO: Configure the claims you want to return

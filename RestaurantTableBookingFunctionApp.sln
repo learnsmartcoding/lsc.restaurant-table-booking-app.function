@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSC.RestaurantTableBookingApp.Function", "LSC.RestaurantTableBookingApp.Function\LSC.RestaurantTableBookingApp.Function.csproj", "{B8E5E1FA-6EF0-4838-87A3-2AE104ACDAB1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSC.CustomAttributeFunction", "CustomAttributeFunction\LSC.CustomAttributeFunction.csproj", "{2F68FA69-A8D6-4298-9EB4-AABCC4291846}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{B8E5E1FA-6EF0-4838-87A3-2AE104ACDAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E5E1FA-6EF0-4838-87A3-2AE104ACDAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E5E1FA-6EF0-4838-87A3-2AE104ACDAB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F68FA69-A8D6-4298-9EB4-AABCC4291846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F68FA69-A8D6-4298-9EB4-AABCC4291846}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F68FA69-A8D6-4298-9EB4-AABCC4291846}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F68FA69-A8D6-4298-9EB4-AABCC4291846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
